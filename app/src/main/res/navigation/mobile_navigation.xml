@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_produto">
+
+    <fragment
+        android:id="@+id/nav_produto"
+        android:name="trevo.sa.trevoapp.ui.produtos.ProdutoFragment"
+        android:label="Produto"
+        tools:layout="@layout/fragment_produto"
+        />
+
+    <fragment
+        android:id="@+id/nav_veja_mais"
+        android:name="trevo.sa.trevoapp.ui.veja_mais.Veja_maisFragment"
+        android:label="@string/veja_mais"
+        tools:layout="@layout/fragment_veja_mais" />
+
+    <fragment
+        android:id="@+id/nav_orcamento"
+        android:name="trevo.sa.trevoapp.ui.orcamento.OrcamentoFragment"
+        android:label="@string/veja_orcamento"
+        tools:layout="@layout/fragment_orcamento" />
+
+</navigation>
