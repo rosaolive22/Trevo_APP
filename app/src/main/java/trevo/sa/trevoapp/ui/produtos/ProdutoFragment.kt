@@ -19,10 +19,13 @@ class ProdutoFragment : Fragment() {
         binding = FragmentProdutoBinding.inflate(inflater, container, false)
         return binding.root
     }
+ //   val recyclerView_produto = findViewById<RecyclerView>(R.id.nav_produto)
+//        recyclerView_produto.layoutManager = LinearLayoutManager(this)
+//        recyclerView_produto.setHasFixedSize(true)//fornece mais desempenho
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.txtProduto.text = "Produtos"
+        binding.txtProduto.text = "Produto"
     }
 }
