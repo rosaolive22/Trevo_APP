@@ -1,30 +1,31 @@
-package trevo.sa.trevoapp.ui.orcamento
+package trevo.sa.trevoapp.ui.model
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
-import trevo.sa.trevoapp.databinding.FragmentOrcamentoBinding
+import androidx.lifecycle.ViewModelProvider
+import trevo.sa.trevoapp.databinding.FragmentVejaMaisBinding
 
+class Veja_maisFragment : Fragment() {
 
-class OrcamentoFragment : Fragment() {
-
-    private lateinit var binding: FragmentOrcamentoBinding
+    private lateinit var binding: FragmentVejaMaisBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-         binding = FragmentOrcamentoBinding.inflate(inflater, container, false)
+        binding = FragmentVejaMaisBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.txtOrcamento.text = "Orçamento"
+        binding.txtVeja.text = "Visão geral dos produtos"
     }
 
 }

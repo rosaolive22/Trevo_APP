@@ -8,11 +8,18 @@
     <string name="action_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="Produtos">Produtos</string>
-    <string name="veja_mais">Veja mais</string>
+    <string name="produtos">Produtos</string>
+    <string name="home">Home</string>
     <string name="veja_orcamento">Orçamento</string>
-    <string name="Item1">Item1</string>
+
+    <string name="Botao_produto">Ver Detalhes</string>
+
+    <string name="cart_title">Carrinho de Compras</string>
+
+    <string name="Item1">Meridia 200</string>
+    <string name="ItemProduto">Item Produto</string>
     <string name="Item2">Item2</string>
     <string name="Item3">Item3</string>
+    <string name="informações_cliente">Minhas Informações</string>
 
 </resources>

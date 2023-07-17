@@ -1,4 +1,4 @@
-package trevo.sa.trevoapp.ui.home
+package trevo.sa.trevoapp.ui.model
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

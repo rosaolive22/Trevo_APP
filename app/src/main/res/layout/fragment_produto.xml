@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.produtos.ProdutoFragment">
+    tools:context=".ui.model.ProdutoFragment">
 
         <ImageView
             android:id="@+id/background"
@@ -29,7 +29,7 @@
                 android:layout_height="10dp"/>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/bloco_produto2"
+                android:id="@+id/bloco_produto"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_margin="10dp"
@@ -41,13 +41,16 @@
 
                 <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <!-- Lista de Produtos-->
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/txtProduto"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/item_nome"
+                        app:layout_constraintBottom_toTopOf="@id/item_img"
+                        android:layout_marginBottom="16dp" />
 
                 </androidx.core.widget.NestedScrollView>
 
