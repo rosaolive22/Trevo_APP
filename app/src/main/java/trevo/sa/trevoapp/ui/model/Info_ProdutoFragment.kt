@@ -5,26 +5,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import trevo.sa.trevoapp.databinding.FragmentOrcamentoBinding
+import trevo.sa.trevoapp.databinding.FragmentInfoProdutoBinding
 
+class Info_ProdutoFragment : Fragment() {
 
-class OrcamentoFragment : Fragment() {
-
-    private lateinit var binding: FragmentOrcamentoBinding
+    private lateinit var binding: FragmentInfoProdutoBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-         binding = FragmentOrcamentoBinding.inflate(inflater, container, false)
+         binding = FragmentInfoProdutoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.txtOrcamento.text = "Orçamento"
+        binding.txtInfoProduto.text = ""
     }
 
 }

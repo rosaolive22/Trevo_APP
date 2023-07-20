@@ -11,7 +11,6 @@ import trevo.sa.trevoapp.R
 import trevo.sa.trevoapp.databinding.FragmentProdutoBinding
 import trevo.sa.trevoapp.ui.model.adapter.AdapterItem
 
-
 class ProdutoFragment : Fragment() {
 
     private lateinit var binding: FragmentProdutoBinding
@@ -23,7 +22,6 @@ class ProdutoFragment : Fragment() {
         // Inflar o layout do fragmento
         binding = FragmentProdutoBinding.inflate(inflater, container, false)
 
-
         // Inicializar a RecyclerView
         val recyclerView: RecyclerView = binding.txtProduto
         // Configurar o layout manager
@@ -31,11 +29,14 @@ class ProdutoFragment : Fragment() {
         // Fornece mais desempenho
         recyclerView.setHasFixedSize(true)
 
-        //Configurar o Adapter:
+
+        // Configurar o Adapter
         val listaProdutos: MutableList<Produto> = mutableListOf()
-        val adapterItem = AdapterItem(requireContext() , listaProdutos)
+        val adapterItem = AdapterItem(requireContext(), listaProdutos)
         recyclerView.adapter = adapterItem
 
+
+        //Criar os itens de modo manual
         val produto1 = Produto(
             R.drawable.meridia200,
             "Meridian 200",
@@ -43,12 +44,30 @@ class ProdutoFragment : Fragment() {
         )
         listaProdutos.add(produto1)
 
-       return binding.root
-    }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        //Criar os itens de modo manual
+        val produto2 = Produto(
+            R.drawable.hover500,
+            "Hover 500",
+            "Ver Detalhes"
+        )
+        listaProdutos.add(produto2)
 
-    }
-    //Adicionar a opção do carrinho de compras:
+        //Criar os itens de modo manual
+        val produto3 = Produto(
+            R.drawable.k3500,
+            "K 3500",
+            "Ver Detalhes"
+        )
+        listaProdutos.add(produto3)
 
+        //Criar os itens de modo manual
+        val produto4 = Produto(
+            R.drawable.uniport5030,
+            "Uniport 5030",
+            "Ver Detalhes"
+        )
+        listaProdutos.add(produto4)
+
+        return binding.root
+    }
 }

@@ -20,15 +20,17 @@
         />
 
     <fragment
-        android:id="@+id/nav_veja_mais"
-        android:name="trevo.sa.trevoapp.ui.model.Veja_maisFragment"
+        android:id="@+id/nav_info_cliente"
+        android:name="trevo.sa.trevoapp.ui.model.Info_ClienteFragment"
         android:label="@string/informações_cliente"
-        tools:layout="@layout/fragment_veja_mais" />
+        tools:layout="@layout/fragment_info_cliente"
+        />
 
     <fragment
-        android:id="@+id/nav_orcamento"
-        android:name="trevo.sa.trevoapp.ui.model.OrcamentoFragment"
-        android:label="@string/veja_orcamento"
-        tools:layout="@layout/fragment_orcamento" />
+        android:id="@+id/nav_info_produto"
+        android:name="trevo.sa.trevoapp.ui.model.Info_ClienteFragment"
+        android:label=""
+        tools:layout="@layout/fragment_info_produto"
+        />
 
 </navigation>
