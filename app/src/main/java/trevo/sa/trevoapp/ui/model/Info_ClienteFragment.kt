@@ -24,7 +24,7 @@ class Info_ClienteFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.txtInfoCliente.text = "Adicionar mais informação"
+        binding.txtInfoCliente.imageAlpha
     }
 
 }

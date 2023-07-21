@@ -10,14 +10,21 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="produtos">Produtos</string>
     <string name="home">Home</string>
+    <string name="Minhas_Informações">Minhas Informações</string>
     <string name="Info_cliente">Informações do Cliente</string>
 
     <string name="Botao_produto">Ver Detalhes</string>
+    <string name="Botao_addOc">Adicionar ao Orçamento</string>
+    <string name="Botao_infoCliente">Adicionar ao cadastro</string>
+    <string name="Input_Nome">Nome</string>
+    <string name="Input_Tele">Telefone</string>
+    <string name="Input_Email">E-mail</string>
 
     <string name="cart_title">Carrinho de Compras</string>
 
     <string name="Item1">Meridia 200</string>
-    <string name="Item1Descri">Imagem de um equipamento agricola da cor laranja, do tipo montado que acopla em um trator"</string>
+    <string name="Item1Descri_img">Imagem de um equipamento agricola da cor laranja, do tipo montado que acopla em um trator"</string>
+    <string name="Item1Descri_pro">Detalhes do produto.</string>
     <string name="ItemProduto">Item Produto</string>
     <string name="Item2">Item2</string>
     <string name="Item2Descri">Colocar...</string>

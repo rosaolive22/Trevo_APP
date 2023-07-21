@@ -28,7 +28,7 @@
 
     <fragment
         android:id="@+id/nav_info_produto"
-        android:name="trevo.sa.trevoapp.ui.model.Info_ClienteFragment"
+        android:name="trevo.sa.trevoapp.ui.model.Info_ProdutoFragment"
         android:label=""
         tools:layout="@layout/fragment_info_produto"
         />
