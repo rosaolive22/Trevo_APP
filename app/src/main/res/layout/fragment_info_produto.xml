@@ -8,7 +8,7 @@
     tools:context=".ui.model.Info_ProdutoFragment">
 
     <ImageView
-        android:id="@+id/txtInfoProduto"
+        android:id="@+id/img_capaInfo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"
@@ -25,10 +25,11 @@
         app:cardCornerRadius="10dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtInfoProduto">
+        app:layout_constraintTop_toBottomOf="@id/img_capaInfo">
 
 
         <LinearLayout
+            android:id="@+id/txtInfoProduto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"

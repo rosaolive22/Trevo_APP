@@ -23,7 +23,7 @@ class Info_ProdutoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.txtInfoProduto.imageAlpha
+        binding.txtInfoProduto.layerType
     }
 
 }

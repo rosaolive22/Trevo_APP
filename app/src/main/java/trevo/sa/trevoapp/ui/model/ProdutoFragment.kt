@@ -5,15 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import trevo.sa.trevoapp.R
 import trevo.sa.trevoapp.databinding.FragmentProdutoBinding
 import trevo.sa.trevoapp.ui.model.adapter.AdapterItem
+import android.content.Intent
+import trevo.sa.trevoapp.ui.model.Info_ProdutoFragment
 
 class ProdutoFragment : Fragment() {
 
     private lateinit var binding: FragmentProdutoBinding
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,7 +44,8 @@ class ProdutoFragment : Fragment() {
         val produto1 = Produto(
             R.drawable.meridia200,
             "Meridian 200",
-            "Ver Detalhes"
+            button = "Ver Detalhes"
+
         )
         listaProdutos.add(produto1)
 
@@ -67,6 +72,9 @@ class ProdutoFragment : Fragment() {
             "Ver Detalhes"
         )
         listaProdutos.add(produto4)
+
+
+
 
         return binding.root
     }
